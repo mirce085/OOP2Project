@@ -6,14 +6,20 @@
 <VBox xmlns="http://javafx.com/javafx/24"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="ui.controllers.SettingsController"
-      spacing="10"
-      padding="10">
-    <TextField fx:id="dbUrlField"    promptText="Database URL"  />
-    <TextField fx:id="dbUserField"   promptText="DB User"       />
-    <TextField fx:id="dbPassField"   promptText="DB Password"   />
-    <TextField fx:id="smtpHostField" promptText="SMTP Host"     />
-    <TextField fx:id="smtpPortField" promptText="SMTP Port"     />
-    <TextField fx:id="smtpUserField" promptText="SMTP User"     />
-    <TextField fx:id="smtpPassField" promptText="SMTP Password" />
-    <Button    text="Save Settings"  onAction="#onSaveSettings" />
+      spacing="10">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <TextField fx:id="dbUrlField"    promptText="Database URL"/>
+    <TextField fx:id="dbUserField"   promptText="DB User"/>
+    <TextField fx:id="dbPassField"   promptText="DB Password"/>
+
+    <TextField fx:id="smtpHostField" promptText="SMTP Host"/>
+    <TextField fx:id="smtpPortField" promptText="SMTP Port"/>
+    <TextField fx:id="smtpUserField" promptText="SMTP User"/>
+    <TextField fx:id="smtpPassField" promptText="SMTP Password"/>
+
+    <Button text="Save Settings" onAction="#onSaveSettings"/>
 </VBox>

@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <TabPane xmlns="http://javafx.com/javafx/24"
          xmlns:fx="http://javafx.com/fxml/1"
-         fx:id="mainTabPane"
          fx:controller="ui.controllers.MainController">
+
     <tabs>
-        <Tab text="Catalog">
+
+        <Tab text="Catalog" closable="false">
             <content>
                 <AnchorPane>
-                    <fx:include source="CatalogView.fxml" />
+                    <fx:include fx:id="catalogView" source="CatalogView.fxml"
+                                AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
                 </AnchorPane>
             </content>
         </Tab>
-        <Tab text="Loans">
+
+        <Tab text="Loans" closable="false">
             <content>
                 <AnchorPane>
-                    <fx:include source="LoanView.fxml" />
+                    <fx:include fx:id="loanView" source="LoanView.fxml"
+                                AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
                 </AnchorPane>
             </content>
         </Tab>
-        <Tab text="Users">
+
+        <Tab text="Users" closable="false">
             <content>
                 <AnchorPane>
-                    <fx:include source="UserView.fxml" />
+                    <fx:include fx:id="userView" source="UserView.fxml"
+                                AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
                 </AnchorPane>
             </content>
         </Tab>
-        <Tab text="Reports">
+
+        <Tab text="Reports" closable="false">
             <content>
                 <AnchorPane>
-                    <fx:include source="ReportView.fxml" />
+                    <fx:include fx:id="reportView" source="ReportView.fxml"
+                                AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+
                 </AnchorPane>
             </content>
         </Tab>
-        <Tab text="Settings">
+
+        <Tab text="Settings" closable="false">
             <content>
                 <AnchorPane>
-                    <fx:include source="SettingsView.fxml" />
+                    <fx:include fx:id="settingsView" source="SettingsView.fxml"
+                                AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
                 </AnchorPane>
             </content>
         </Tab>
+
     </tabs>
 </TabPane>

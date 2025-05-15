@@ -6,12 +6,18 @@
 <VBox xmlns="http://javafx.com/javafx/24"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="ui.controllers.ReportController"
-      spacing="10"
-      padding="10">
-    <DatePicker fx:id="startDatePicker" />
-    <DatePicker fx:id="endDatePicker"   />
-    <Button     text="Generate Report" onAction="#onGenerateReport" />
-    <TabPane    fx:id="reportTabPane">
-        <!-- Tabs for Daily, Monthly, etc. -->
-    </TabPane>
+      spacing="10">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <TableView fx:id="reportTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colName"  text="Metric" prefWidth="200"/>
+            <TableColumn fx:id="colValue" text="Value"  prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Label fx:id="summaryLabel" text="No data loaded yet…" />
 </VBox>
