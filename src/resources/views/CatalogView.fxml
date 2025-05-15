@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<VBox spacing="10" padding="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.ui.controllers.CatalogController">
+    <TextField fx:id="searchField" promptText="Search by title, author, or ISBN" />
+    <Button text="Search" onAction="#onSearch" />
+    <TableView fx:id="bookTable">
+        <columns>
+            <TableColumn text="ISBN" fx:id="colIsbn" />
+            <TableColumn text="Title" fx:id="colTitle" />
+            <TableColumn text="Author" fx:id="colAuthor" />
+            <TableColumn text="Genre" fx:id="colGenre" />
+            <TableColumn text="Available" fx:id="colAvailable" />
+        </columns>
+    </TableView>
+</VBox>

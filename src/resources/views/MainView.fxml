@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<TabPane fx:id="mainTabPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.ui.controllers.MainController">
+    <tabs>
+        <Tab text="Catalog">
+            <content>
+                <AnchorPane>
+                    <fx:include source="CatalogView.fxml" />
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Loans">
+            <content>
+                <AnchorPane>
+                    <fx:include source="LoanView.fxml" />
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Users">
+            <content>
+                <AnchorPane>
+                    <fx:include source="UserView.fxml" />
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Reports">
+            <content>
+                <AnchorPane>
+                    <fx:include source="ReportView.fxml" />
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Settings">
+            <content>
+                <AnchorPane>
+                    <fx:include source="SettingsView.fxml" />
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
