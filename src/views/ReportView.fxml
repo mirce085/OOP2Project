@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/24"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ui.controllers.ReportController"
+      spacing="10"
+      padding="10">
+    <DatePicker fx:id="startDatePicker" />
+    <DatePicker fx:id="endDatePicker"   />
+    <Button     text="Generate Report" onAction="#onGenerateReport" />
+    <TabPane    fx:id="reportTabPane">
+        <!-- Tabs for Daily, Monthly, etc. -->
+    </TabPane>
+</VBox>

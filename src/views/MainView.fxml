@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<TabPane fx:id="mainTabPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.ui.controllers.MainController">
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns="http://javafx.com/javafx/24"
+         xmlns:fx="http://javafx.com/fxml/1"
+         fx:id="mainTabPane"
+         fx:controller="ui.controllers.MainController">
     <tabs>
         <Tab text="Catalog">
             <content>

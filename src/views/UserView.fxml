@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/24"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ui.controllers.UserController"
+      spacing="10"
+      padding="10">
+    <TextField fx:id="idField"       promptText="User ID"    />
+    <TextField fx:id="nameField"     promptText="Name"       />
+    <TextField fx:id="emailField"    promptText="Email"      />
+    <TextField fx:id="passwordField" promptText="Password"   />
+    <ComboBox fx:id="roleCombo"      promptText="Role"        />
+    <Button   text="Create User"     onAction="#onCreateUser" />
+    <Button   text="Update User"     onAction="#onUpdateUser" />
+    <Button   text="Delete User"     onAction="#onDeleteUser" />
+</VBox>
